@@ -1,0 +1,88 @@
+h1 {
+  color: white;
+  font-size: 60px;
+}
+
+.info {
+  color: white;
+  width: 510px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+p {
+  font-family: "IBM Plex Mono", monospace;
+  color: #9C9C9C;
+}
+
+.button {
+  background-color: green;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background-color: rgb(6, 167, 6);
+  cursor: pointer;
+}
+
+.picture {
+  justify-content: right;
+  justify-self: right;
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.mal {
+  border-radius: 50%;
+  width: 510px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+  }
+  .picture {
+    margin-top: 30px;
+    justify-items: center;
+    display: flex;
+    margin-left: 0;
+  }
+  .mal {
+    align-self: center;
+    width: 100%;
+    display: inline-block;
+    justify-self: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .button {
+    align-self: center;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info p {
+    width: 225px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=home.css.map */
