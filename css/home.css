@@ -3,11 +3,12 @@ h1 {
   font-size: 60px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .info {
-  color: white;
-  width: 510px;
-  display: inline-block;
-  font-size: 18px;
+  width: 500px;
 }
 
 p {
@@ -32,57 +33,87 @@ p {
 }
 
 .picture {
-  justify-content: right;
-  justify-self: right;
-  display: inline-block;
   margin-left: 100px;
 }
 
 .mal {
   border-radius: 50%;
   width: 510px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
-.main {
+.hero {
+  min-height:100vh;
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 5%;
+  gap: 100px;
+}
+
+.projects h1{
+  text-align:center;
+}
+
+.testimonials h1{
+  text-align:center;
+}
+
+.projectsarea {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom:25px;
+}
+
+.project {
+  width: 350px;
+  height: 350px;
+  border-radius: 15px;
+  background-color: #9C9C9C;
+  flex-shrink: 0;
 }
 
 @media screen and (max-width: 768px) {
-  .main {
+
+  .hero {
     flex-direction: column;
     text-align: center;
+    gap: 40px;
   }
+
   .picture {
-    margin-top: 30px;
-    justify-items: center;
+    margin-left: 0;
     display: flex;
-    margin-left: 0;
-  }
-  .mal {
-    align-self: center;
-    width: 100%;
-    display: inline-block;
-    justify-self: center;
     justify-content: center;
-    margin-left: 0;
   }
+
+  .mal {
+    width: 80%;
+    max-width: 350px;
+  }
+
   .button {
     align-self: center;
   }
+
   .info {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
+
   .info p {
     width: 225px;
     text-align: center;
   }
-}/*# sourceMappingURL=home.css.map */
+
+  .projectsarea {
+    flex-direction: column;
+    align-items: center;
+  }
+}
